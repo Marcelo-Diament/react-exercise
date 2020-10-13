@@ -1,20 +1,26 @@
-import React from 'react';
+import React, { useState } from 'react';
 import logo from '../../logo.svg';
 import './style.css';
 
 const Header = () => {
-  const temaAtual = 'light';
+  const [tema, setTema] = useState('dark')
+
+  const toggleTema = () => {
+    let novoTema = tema === 'dark' ? 'light' : 'dark'
+    setTema(novoTema)
+  }
 
   return (
-    <header className="App-header">
+    <header className={`App-header App-header--${tema}`}>
       <img
         src={logo}
         className="App-logo"
         alt="logo"
+        onClick={() => toggleTema()}
       />
-      <h1>{temaAtual}</h1>
+      <h1>{tema}</h1>
       <a
-        className="App-link"
+        className={`App-link--${tema}`}
         href="https://github.com/Marcelo-Diament/react-exercise"
         target="_blank"
         rel="noopener noreferrer"
