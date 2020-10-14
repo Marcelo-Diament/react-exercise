@@ -1,13 +1,17 @@
 import React, { useState } from 'react';
 import logo from '../../logo.svg';
 import './style.css';
+import clds from 'console-log-design-system'
 
 const Header = () => {
   const [tema, setTema] = useState('dark')
 
+  const { makeComment } = clds
+
   const toggleTema = () => {
     let novoTema = tema === 'dark' ? 'light' : 'dark'
     setTema(novoTema)
+    makeComment('toggleTema', [`tema >> ${novoTema}`], 'success', 'md', 'badgeInverted')
   }
 
   return (
