@@ -8,26 +8,26 @@
   padding: 12px 32px 24px 12px;
 }
 
-.App-header--dark {
+.App-header.App-header--dark {
   background-color: #282c34;
   color: #dfb600;
 }
 
-.App-header--light {
+.App-header.App-header--light {
   background-color: #e0e1e4;
   color: #0061df;
 }
 
-.App-logo {
+.App-header .App-logo {
   height: 96px;
   width: 96px;
 }
 
-.App-link--dark {
+.App-header .App-link--dark {
   color: #dfb600;
 }
 
-.App-link--light {
+.App-header .App-link--light {
   color: #0061df;
 }
 
