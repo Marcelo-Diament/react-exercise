@@ -1,0 +1,10 @@
+.meu-sliderzin {
+  height: calc(100vh - 282px);
+  max-height: calc(100vh -182px);
+}
+
+.meu-sliderzin .simple-slider-slide {
+  background-color: darkorange;
+  overflow-y: hidden;
+  padding-top: 0;
+}
